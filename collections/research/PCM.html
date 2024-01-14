@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Page Label (Paper Title or Abbr)-->
+  <title>Pareto Dominance Archive and Coordinated Selection Strategy-Based Many-Objective Optimizer for Protein Structure Prediction</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <!-- Import script to support latex formula-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true
+      }
+    });
+  </script>
+  <!-- End import latex -->
+
+  <!-- Import Hit-counter -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <!-- End Import Hit-counte -->
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- Paper Ttile -->
+            <h1 class="title is-1 publication-title">Pareto Dominance Archive and Coordinated Selection Strategy-Based Many-Objective Optimizer for Protein Structure Prediction</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://zhangzm0128.github.io" target="_blank">Zhiming Zhang</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://toyamaailab.github.io/" target="_blank">Shangce Gao</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra" target="_blank">Zhenyu Lei</a><sup>1</sup>,
+              </span>
+              Runqun Xiong<sup>2</sup>,
+              and Jiujun Cheng<sup>3</sup>
+            </div>
+
+            <!-- Journal and Institution -->
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                IEEE/ACM Transactions on Computational Biology and Bioinformatics • 2023
+              </span>
+              <span class="eql-cntrb"><small><br><sup>1</sup>University of Toyama, <sup>2</sup>Southeast University, <sup>3</sup>Tongji University</small></small></span>
+            </div>
+
+            
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- Paper link -->
+                <span class="link-block">
+                  <a href="https://ieeexplore.ieee.org/document/10049519?denied=" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/PCM/Supplementary.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                  </a>
+                </span>
+                
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/zhangzm0128/PCM-Protein-Structure-Prediction" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-brands fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span>
+                -->
+              </div>
+              <!-- Hit Number -->
+              <div class="hit-counter">
+                <i class="fas fa-solid fa-eye text-2xl text-gray-400 mr-1"></i>
+                <span id="busuanzi_container_site_pv" class="hit-number">
+                  <span id="busuanzi_value_site_pv" class="hit-number"></span>
+                </span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--If you have any intro video
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Protein structure prediction (PSP) is predicting the three-dimensional of protein from its amino acid sequence only based on the information hidden in the protein sequence. One of the efficient tools to describe this information is protein energy functions. Despite the advancements in biology and computer science, PSP is still a challenging problem due to its large protein conformation space and inaccurate energy functions. In this study, PSP is treated as a many-objective optimization problem and four conflicting energy functions are used as different objectives to be optimized. A novel Pareto-dominance-archive and Coordinated-selection-strategy-based Many-objective-optimizer (PCM) is proposed to perform the conformation search. In it, convergence and diversity-based selection metrics are used to enable PCM to find near-native proteins with well-distributed energy values, while a Pareto-dominance-based archive is proposed to save more potential conformations that can guide the search to more promising conformation areas. The experimental results on thirty-four benchmark proteins demonstrate the significant superiority of PCM in comparison with other single, multiple, and many-objective evolutionary algorithms. Additionally, the inherent characteristics of iterative search of PCM can also give more insights into the dynamic progress of protein folding besides the final predicted static tertiary structure. All these confirm that PCM is a fast, easy-to-use, and fruitful solution generation method for PSP.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+End image carousel -->
+
+<!-- is-small control block to white-->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Protein Structure Prediction</h2>
+          <div class="level-set has-text-justified">
+            <div style="text-align: center;">
+              <img src="static/images/PCM/intro.gif" alt="PSP Intro" width="600" style="display: inline-block;">
+            </div>
+            <p>
+              Protein structure prediction (PSP) is predicting the three-dimensional of protein from its amino acid sequence only based on the information hidden in the protein sequence.
+              <br><br>
+              Template-based modeling (TBM) and free-modeling (FM) are two major computational methods used in PSP. The former relies on the identification of homologous proteins in Protein Data Bank to a great extent. The latter, also termed as ab-initio prediction, can cope with such circumstances productively, as it predicts the tertiary structure of a protein from its amino acid sequence directly.
+              <br><br> 
+              The characteristics of these computational methods for solving PSP are summarized in the following table.
+            </p>
+            <div style="text-align: center;">
+              <img src="static/images/PCM/summary.png" alt="PSP Method Summary" width="1000" style="display: inline-block;">
+            </div>
+            <p style="text-align: right;"><small>DL (deep learning), MC (Monte Carlo simulation)<br>SOEA (single-objective evolutionary algorithms), MOEA (multiple-objective evolutionary algorithms)</small></p>
+          </div>
+          <!--Figure Description
+          <h4 class="subtitle has-text-centered blend-img-background">
+            <strong>Multi-modal datasets</strong> anomaly detection accuracy is much lower on more complex datasets containing multiple small objects, complex backgrounds, and when anomalies consist of related object categories.
+          </h4>
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- is-small control block to white-->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">PCM Overview</h2>
+          <div class="level-set has-text-justified">
+            <div style="text-align: center;">
+              <img src="static/images/PCM/framework.png" alt="PCM Framework" class="center-image">
+            </div>
+            <br>
+            <p>
+              The figure shows the framework of PCM for PSP. Firstly, initial proteins are generated from the amino-acid-sequence by limiting proteins, torsion angles using a secondary structure prediction method, namely PSIPRED, to reduce the search space. The backbone angle restriction for $\phi$ and $\psi$ obtained by PSIPRED is summarized in the Supplementary File.
+              <br><br>
+              Then, the population of proteins is used to generate new individuals (i.e., solutions) through a mating selection, mutation, and crossover. The mutation and crossover operators used in PCM are polynomial mutation and simulated binary crossover, respectively. Thereafter, an environmental selection strategy chooses the optimal population from all individuals to be survived into the next generation. In addition, a Pareto-based archive is used to save more potential conformations in our method. The environmental selection strategy is used to update the archive from the new generation based on Pareto dominance and a crowding distance mechanism.
+              <br><br>
+              Finally, a clustering method based on the comparison of the protein distance matrix is used to select the most representative conformation from the archive, because the conformation of the native protein is an optimal point rather than a Pareto front.
+            </p>
+          </div>
+          <!--Figure Description
+          <h4 class="subtitle has-text-centered blend-img-background">
+            <strong>Multi-modal datasets</strong> anomaly detection accuracy is much lower on more complex datasets containing multiple small objects, complex backgrounds, and when anomalies consist of related object categories.
+          </h4>
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- is-light control block to gray-->
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Experimental Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item" style="text-align: center;">
+          <img src="static/images/PCM/comparison.png" width="600" alt="comparison"/>
+          <h2 class="subtitle has-text-justified">
+            The comparison of the best predicted conformation (green) and the clustered one (pink) with the native conformation (red) for four typical proteins with different structures of a varying number of $\alpha$-helices and $\beta$-sheets. It is noteworthy that the $\alpha$-helix portions of the predicted results, both in the best and clustered one, are nearly identical to the native conformation. This strongly indicates the superior ability of PCM in predicting the $\alpha$-helix. Conformation comparison figures for all thirty-four proteins are provided in the Supplementary File.
+          </h2>
+        </div>
+        <div class="item" style="text-align: center;">
+          <img src="static/images/PCM/pareto.png" width="600" alt="pareto"/>
+          <h2 class="subtitle has-text-justified">
+            It should be pointed out that the real Pareto front of PSP is unknown due to the inaccurate energy functions. To find out the real native conformation, the archive in PCM saves as many potential conformations as possible, which are widely distributed on the obtained Pareto front. PCM can obtain fruitful conformations from multiple energy functions to achieve the near-native conformation.
+          </h2>
+        </div>
+        <div class="item" style="text-align: center;">
+          <img src="static/images/PCM/search.png" width="600" alt="search"/>
+          <h2 class="subtitle has-text-justified">
+            PCM can provide the dynamic folding process of proteins that cannot be achieved by other methods. Thus, such inherent characteristics of iterative search of PCM can give some insights into the dynamic progress of protein folding for specialists in biology and life science.
+          </h2>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+
+<!-- Youtube video
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+End youtube video -->
+
+
+<!-- Video carousel
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+End paper poster -->
+
+
+<!--Citation -->
+  <section class="section is-light">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Citation</h2>
+      <div class="buttons has-addons">
+        <button class="button is-normal is-rounded is-dark is-selected" id="BibtexButton">BibTeX</button>
+        <button class="button is-normal is-rounded is-light" id="TextButton">Text</button>
+      </div>
+      
+      <div id="bibtex">
+        <br>
+        <!--Add BibTex Citation-->
+        <pre><code>@article{zhang2023pareto,
+  title={Pareto Dominance Archive and Coordinated Selection Strategy-Based Many-Objective Optimizer for Protein Structure Prediction},
+  author={Zhang, Zhiming and Gao, Shangce and Lei, Zhenyu and Xiong, Runqun and Cheng, Jiujun},
+  journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+  year={2023},
+  volume={20},
+  number={3},
+  pages={2328-2340},
+  publisher={IEEE},
+  doi={10.1109/TCBB.2023.3247025}
+}</code></pre>
+      </div>
+
+      <div id="text_cite" style="display: none;">
+        <br>
+        <!--Add Text Citation-->
+        <pre><code>Z. Zhang, S. Gao, Z. Lei, R. Xiong and J. Cheng, "Pareto Dominance Archive and Coordinated Selection Strategy-Based Many-Objective Optimizer for Protein Structure Prediction," in IEEE/ACM Transactions on Computational Biology and Bioinformatics, vol. 20, no. 3, pp. 2328-2340, 2023. </code></pre>
+      </div>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <!-- Footer Text
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

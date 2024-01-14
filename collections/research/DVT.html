@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Page Label (Paper Title or Abbr)-->
+  <title>Dendritic Learning-incorporated Vision Transformer for Image Recognition</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <!-- Import script to support latex formula-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true
+      }
+    });
+  </script>
+  <!-- End import latex -->
+
+  <!-- Import Hit-counter -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <!-- End Import Hit-counte -->
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- Paper Ttile -->
+            <h1 class="title is-1 publication-title">Dendritic Learning-incorporated Vision Transformer for Image Recognition</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://zhangzm0128.github.io" target="_blank">Zhiming Zhang</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra" target="_blank">Zhenyu Lei</a><sup>1</sup>,
+              </span>
+              <!-- This is an example that has no herf -->
+              Masaaki Omura<sup>1</sup>,
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=Qb2bhzcAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Hideyuki Hasegawa</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                and <a href="https://toyamaailab.github.io/" target="_blank">Shangce Gao</a><sup>1</sup>
+              </span>
+            </div>
+
+            <!-- Journal and Institution -->
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                IEEE/CAA Journal of Automatica Sinica • 2024
+              </span>
+              <span class="eql-cntrb"><small><br><sup>1</sup>University of Toyama</small></span>
+            </div>
+
+            
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- Paper link -->
+                <span class="link-block">
+                  <a href="https://www.ieee-jas.net/en/article/id/ec6a16fa-d348-417a-af0f-dd734c60439c" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link 
+                <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                  </a>
+                </span>
+                -->
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/zhangzm0128/DVT" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-brands fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span>
+                -->
+              </div>
+              <!-- Hit Number -->
+              <div class="hit-counter">
+                <i class="fas fa-solid fa-eye text-2xl text-gray-400 mr-1"></i>
+                <span id="busuanzi_container_site_pv" class="hit-number">
+                  <span id="busuanzi_value_site_pv" class="hit-number"></span>
+                </span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--If you have any intro video
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This study proposes to integrate dendritic learnable network architecture with Vision Transformer to improve the accuracy of image recognition. In this study, based on the theory of dendritic neurons in neuroscience, we design a network that is more practical for engineering to classify visual features. Based on this, we propose a dendritic learning-incorporated vision Transformer (DVT), which outperforms other state-of-the-art methods on three image recognition benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+End image carousel -->
+
+<!-- is-small control block to white-->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Neural Network Driven by Biological Interpretability</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              Image recognition, as an upstream task of many computer vision problems, has very important research value. Generally it can be seen as consisting of two parts, the feature extraction network and the classification network. 
+              <br><br>
+              For feature extraction networks, from the initial simple stacked convolutional layers to the introduction of more and more biologically interpretable structures (residuals, densely connections, attention mechanisms, etc.). Allowing it to extract richer and more representative image features. The figure below shows the prediction performance of multiple representative networks on the CIFAR dataset. As the network's biological interpretability increases, its accuracy gradually improves.
+              <br><br> 
+              Most of state-of-the-art studies have focused on using MLP structures for feature classification. Despite their simplicity and effectiveness, MLPs still have limitations, such as excessive parameter requirements and susceptibility to overfitting. Inspired by the evolution of visual feature extraction networks, developing more efficient and biologically interpretable classification networks has the potential to significantly improve image recognition accuracy. 
+            </p>
+            <div style="text-align: center;">
+              <img src="static/images/DVT/accuracy.png" alt="Interpretability Accuracy" width="600" style="display: inline-block;">
+            </div>
+          </div>
+          <!--Figure Description
+          <h4 class="subtitle has-text-centered blend-img-background">
+            <strong>Multi-modal datasets</strong> anomaly detection accuracy is much lower on more complex datasets containing multiple small objects, complex backgrounds, and when anomalies consist of related object categories.
+          </h4>
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- is-small control block to white-->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">DVT Overview</h2>
+          <div class="level-set has-text-justified">
+            <div style="text-align: center;">
+              <img src="static/images/DVT/DVT.gif" alt="DVT Framework" class="center-image">
+            </div>
+            <br>
+            <p>
+              DVT combines two essential components: a vision Transformer featuring embedded attention mechanisms and a dendritic network mirroring real neuronal architecture. The vision Transformer extracts more comprehensive and representative image features, while the dendritic network ensures accurate feature classification.
+              <br><br>
+              The dendritic network, comprising three biomimetic layers (synapse, dendrite, and soma), takes charge of the final feature classification. Extensive neuroscience research has unequivocally demonstrated the irreplaceable nature of the theoretical model of dendritic nerves. Moreover, numerous experiments conducted in the field of information science have consistently showcased the remarkable capability of dendritic networks in effectively addressing nonlinear problems.
+            </p>
+            <!-- This is an example of a latex formula with label-->
+            <div class="formula-container">
+              <span class="formula">$y^k = \sum_{i=1}^{m} \sum_{j=1}^{d} \delta \left(\eta\left(w^k_{i,j} \eta(x)^j + b^k_{i,j}\right)\right)$</span>
+              <span class="formula-number">(1)</span>
+            </div>
+            <br>
+            <div class="formula-container">
+              <span class="formula">$y = [y^1, y^2, \dots, y^c]$</span>
+              <span class="formula-number">(2)</span>
+            </div>
+            <br>
+            <div class="formula-container">
+              <span class="formula">$\eta(x) = \frac{x - \bar{x}}{\sqrt{\sigma(x) + \epsilon}}\theta + \lambda$</span>
+              <span class="formula-number">(3)</span>
+            </div>
+            <br>
+            <p>
+              Where $x$ is the input feature of d dimension and $y^k$ is the predicted probability of the tth classification target by the network. $c$ is the number of classes. First, normalized inputs are mapped to $m$ dendritic branches through $m$ sets of learnable parameters $w$ and $b$, a process called synaptic connection. Then, feature normalization and softmax activation function $\delta(\cdot)$ are performed on each branch. Finally, soma layer conception in neuroscience is applied in the network to integrate all dendrites into the result. Notably, each $y$ is associated with one dendritic neuron following (1), and the synapses on each branch are independent for each neuron.
+            </p>
+          </div>
+          <!--Figure Description
+          <h4 class="subtitle has-text-centered blend-img-background">
+            <strong>Multi-modal datasets</strong> anomaly detection accuracy is much lower on more complex datasets containing multiple small objects, complex backgrounds, and when anomalies consist of related object categories.
+          </h4>
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- is-light control block to gray-->
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Experimental Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item" style="text-align: center;">
+          <img src="static/images/DVT/comparison.png" width="600" alt="comparison"/>
+          <h2 class="subtitle has-text-justified">
+            The biological interpretability of these methods has shown a gradual increase, transitioning from CNN to Transformer models. The results presented in table demonstrate the clear superiority of DVT over its peers. Notably, the advantages of DVT become more pronounced as the classification difficulty of the datasets increases, reinforcing our conclusion that DVT excels at approximating complex target functions. Furthermore, the accuracy of each model increases as its interpretability improves, highlighting the advantage of employing biologically interpretable models for image recognition problems.
+          </h2>
+        </div>
+        <div class="item" style="text-align: center;">
+          <img src="static/images/DVT/hyperparams.png" width="600" alt="hyperparams"/>
+          <h2 class="subtitle has-text-justified">
+            This figure presents the hyper-parameters results, where the number of dendritic branches is denoted as 0, representing the original ViT. Remarkably, incorporating the dendritic network significantly improves the performance of DVT across various learning rates. Through extensive experimentation with different numbers of dendritic branches (ranging from 2 to 64), we observe that increasing the number of branches leads to better results. For optimal prediction outcomes across different problem domains, we recommend setting the number of branches within the range of 8 to 32. Additionally, we find that a learning rate of 0.003 yields favorable outcomes for DVT.
+          </h2>
+        </div>
+        <div class="item" style="text-align: center;">
+          <img src="static/images/DVT/ablation.png" width="600" alt="ablation"/>
+          <h2 class="subtitle has-text-justified">
+            We introduce a linear layer between the extracted features and the classification outcomes. The sizes of the added linear layers are 160 and 576, respectively. Notably, a simple stacking of linear layers and increasing their size not only fails to enhance accuracy but also leads to degraded network performance due to heightened learning difficulty. In contrast, DVT relies on a sophisticated architecture to perform efficient calculations with fewer parameters, thereby enhancing network performance.
+          </h2>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+
+<!-- Youtube video
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+End youtube video -->
+
+
+<!-- Video carousel
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+End paper poster -->
+
+
+<!--Citation -->
+  <section class="section is-light">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Citation</h2>
+      <div class="buttons has-addons">
+        <button class="button is-normal is-rounded is-dark is-selected" id="BibtexButton">BibTeX</button>
+        <button class="button is-normal is-rounded is-light" id="TextButton">Text</button>
+      </div>
+      
+      <div id="bibtex">
+        <br>
+        <!--Add BibTex Citation-->
+        <pre><code>@article{zhang2024dendritic,
+    author={Zhiming Zhang,Zhenyu Lei,Masaaki Omura,Hideyuki Hasegawa,Shangce Gao},
+    title={Dendritic Learning-Incorporated Vision Transformer for Image Recognition},
+    journal={IEEE/CAA Journal of Automatica Sinica},  
+    year={2024},
+    volume={11},
+    number={2},
+    pages={541-543},
+    doi={10.1109/JAS.2023.123978}
+}       </code></pre>
+      </div>
+
+      <div id="text_cite" style="display: none;">
+        <br>
+        <!--Add Text Citation-->
+        <pre><code>Z. Zhang, Z. Lei, M. Omura, H. Hasegawa, and S. Gao, “Dendritic learning-incorporated vision transformer for image recognition,” IEEE/CAA J. Autom. Sinica, vol. 11, no. 2, pp. 541-543, Feb. 2024. </code></pre>
+      </div>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <!-- Footer Text
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

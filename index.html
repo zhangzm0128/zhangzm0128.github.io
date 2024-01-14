@@ -1,0 +1,76 @@
+<html lang="en">
+ <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+    Zhangzm Homepage
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="static/css/homepage.css" rel="stylesheet"/>
+    <script src="./static/js/homepage.js"></script>
+    </head>
+    <body>
+        <div class="nav-content bg-gray-200">
+            <div class="welcome-title">
+                <h2 class="text-xl font-bold text-black text-center mt-8">
+                    Welcome to<br>
+                    Zhiming Zhang's <br>
+                    Homepage!
+                </h2>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-black text-left border-b-2 border-neutral-500 mx-2">Menu</h3>
+                <ul id="navLinks" class="ml-2 list-none text-left">
+                    <li>
+                        <a href="#" data-src="./resume.html" class="text-l text-left text-zinc-600 underline hover:text-zinc-600 hover:underline">
+                            <i class="fas fa-building"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-src="./publication.html" class="text-l text-left hover:text-zinc-600 hover:underline">
+                            <i class="fas fa-file-alt"></i> Publications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-src="./collections/collections.html" class="text-l text-left hover:text-zinc-600 hover:underline">
+                            <i class="fas fa-bookmark"></i> Collection
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold text-black text-left border-b-2 border-neutral-500 mx-2">Links</h3>
+                <ul id="otherLinks" class="ml-2 list-none text-left">
+                    <li>
+                        <a href="https://scholar.google.com/citations?hl=en&user=j5YBr3IAAAAJ" target="_blank" class="text-l text-left hover:text-zinc-600 hover:underline">
+                            <i class="fab fa-google"></i> Google Scholar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://orcid.org/0000-0003-2039-4097" target="_blank" class="text-l text-left hover:text-zinc-600 hover:underline">
+                            <i class="fab fa-orcid"></i> ORCID
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/zhangzm0128" target="_blank" class="text-l text-left hover:text-zinc-600 hover:underline">
+                            <i class="fab fa-github"></i> Github
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="profile-pic">
+                <script type="text/javascript" src="//rf.revolvermaps.com/0/0/5.js?i=55ckcx5a965&amp;m=0&amp;c=ff0000&amp;cr1=ffffff" async="async"></script>
+            </div>
+            <div class="footer">
+                <p>Last Updated: January 1, 2024</p>
+                <p>&copy; 2024 Your Name</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <iframe id="iframeContent" src="./resume.html" frameborder="0"></iframe>
+        </div>
+    </body>
+</html>
